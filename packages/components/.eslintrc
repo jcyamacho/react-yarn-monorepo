@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "@my-company-name/react-typescript"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off"
+  },
+  "ignorePatterns": [
+    "*.js"
+  ]
+}

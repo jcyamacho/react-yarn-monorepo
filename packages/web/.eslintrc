@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@my-company-name/react-typescript"
+  ]
+}

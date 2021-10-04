@@ -1,0 +1,12 @@
+{
+  "name": "my-company-name",
+  "private": true,
+  "scripts": {
+    "lint": "yarn workspaces foreach -p run lint",
+    "build": "yarn workspaces foreach -pt run build",
+    "watch": "yarn workspaces foreach -p run watch"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

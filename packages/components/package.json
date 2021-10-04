@@ -1,0 +1,25 @@
+{
+  "name": "@my-company-name/components",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "modile": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint . && tsc --noEmit",
+    "build": "tsup src/index.ts --clean --dts --format cjs,esm --inject ./react-import.js",
+    "watch": "tsup src/index.ts --clean --dts --format cjs,esm --inject ./react-import.js --watch src"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@my-company-name/eslint-config-react-typescript": "*",
+    "eslint": "^7.32.0",
+    "tsup": "^5.3.0",
+    "typescript": "^4.4.3"
+  }
+}

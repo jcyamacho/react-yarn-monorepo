@@ -1,0 +1,7 @@
+{
+  "eslint.workingDirectories": [
+    "./packages/web",
+    "./packages/components",
+    "./packages/eslint-config-react-typescript"
+  ]
+}
